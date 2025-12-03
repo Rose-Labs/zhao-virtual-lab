@@ -166,3 +166,15 @@ cython_debug/
 
 # Papers
 nanobody_design/discussions/finetuning/papers
+
+# API Keys and Secrets (Paper Enhancement)
+.env
+.env.local
+*.key
+*secret*
+*api_key*
+*password*
+paper_enhancement/output/
+paper_enhancement/cache/
+paper_enhancement/meetings/
+paper_enhancement/temp/
