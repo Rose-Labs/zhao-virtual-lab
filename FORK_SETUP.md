@@ -15,9 +15,11 @@ You're currently using the original `zou-group/virtual_lab` repository. Forking 
 1. Go to https://github.com/zou-group/virtual_lab
 2. Click the "Fork" button (top right)
 3. Select "Rose-Labs" as the destination organization
-4. Keep the repository name as `virtual_lab` (or customize if desired)
+4. Name it `zhao-virtual-lab` (or customize as desired)
 5. Ensure "Copy the main branch only" is unchecked if you want all branches
 6. Click "Create fork"
+
+**Note:** The Rose Labs fork is named `zhao-virtual-lab` to clearly indicate its origin from the Zou group's virtual lab.
 
 ## Step 2: Update Your Local Repository
 
@@ -28,7 +30,7 @@ cd ~/virtual_lab
 
 # Add the Rose-Labs fork as the new origin
 git remote remove origin
-git remote add origin https://github.com/Rose-Labs/virtual_lab.git
+git remote add origin https://github.com/Rose-Labs/zhao-virtual-lab.git
 
 # Add the original repository as upstream (for pulling updates)
 git remote add upstream https://github.com/zou-group/virtual_lab.git
@@ -36,8 +38,8 @@ git remote add upstream https://github.com/zou-group/virtual_lab.git
 # Verify remotes
 git remote -v
 # Should show:
-# origin    https://github.com/Rose-Labs/virtual_lab.git (fetch)
-# origin    https://github.com/Rose-Labs/virtual_lab.git (push)
+# origin    https://github.com/Rose-Labs/zhao-virtual-lab.git (fetch)
+# origin    https://github.com/Rose-Labs/zhao-virtual-lab.git (push)
 # upstream  https://github.com/zou-group/virtual_lab.git (fetch)
 # upstream  https://github.com/zou-group/virtual_lab.git (push)
 ```
@@ -75,7 +77,7 @@ ssh-keygen -t ed25519 -C "your_email@stanford.edu"
 cat ~/.ssh/id_ed25519.pub
 
 # Update remote to use SSH
-git remote set-url origin git@github.com:Rose-Labs/virtual_lab.git
+git remote set-url origin git@github.com:Rose-Labs/zhao-virtual-lab.git
 ```
 
 ## Step 5: Collaborate with Your Lab
@@ -84,8 +86,8 @@ Now your team members can:
 
 ```bash
 # Clone the Rose Labs fork
-git clone https://github.com/Rose-Labs/virtual_lab.git
-cd virtual_lab
+git clone https://github.com/Rose-Labs/zhao-virtual-lab.git
+cd zhao-virtual-lab
 
 # Set up upstream to pull updates from original repository
 git remote add upstream https://github.com/zou-group/virtual_lab.git
@@ -135,7 +137,7 @@ __pycache__/
 
 After setting this up, your repository structure will be:
 ```
-Rose-Labs/virtual_lab (your fork)
+Rose-Labs/zhao-virtual-lab (your fork)
   ├── desktop_app/           # Your lab's additions
   ├── paper_enhancement/     # Core pipeline
   ├── .env.example           # Template for API keys (no secrets)
@@ -154,7 +156,7 @@ Rose-Labs/virtual_lab (your fork)
 
 When sharing with lab members:
 1. Add them to the Rose-Labs organization with appropriate permissions
-2. They should clone from `https://github.com/Rose-Labs/virtual_lab`
+2. They should clone from `https://github.com/Rose-Labs/zhao-virtual-lab`
 3. Share the `.env` file contents securely (not via GitHub!)
 4. Point them to this setup guide
 

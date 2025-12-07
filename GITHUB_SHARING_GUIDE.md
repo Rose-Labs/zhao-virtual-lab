@@ -46,7 +46,7 @@ cd ~/virtual_lab
 
 # Point to your Rose-Labs fork
 git remote remove origin
-git remote add origin https://github.com/Rose-Labs/virtual_lab.git
+git remote add origin https://github.com/Rose-Labs/zhao-virtual-lab.git
 
 # Keep original repo as upstream
 git remote add upstream https://github.com/zou-group/virtual_lab.git
@@ -80,7 +80,7 @@ You'll need to set up authentication. Choose one method:
 ssh-keygen -t ed25519 -C "your_email@example.com"
 cat ~/.ssh/id_ed25519.pub
 # Copy output to GitHub → Settings → SSH and GPG keys
-git remote set-url origin git@github.com:Rose-Labs/virtual_lab.git
+git remote set-url origin git@github.com:Rose-Labs/zhao-virtual-lab.git
 ```
 
 ## For Your Team Members
@@ -91,8 +91,8 @@ Share this with colleagues who want to use the repository:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Rose-Labs/virtual_lab.git
-   cd virtual_lab
+   git clone https://github.com/Rose-Labs/zhao-virtual-lab.git
+   cd zhao-virtual-lab
    ```
 
 2. **Create environment file:**
@@ -201,7 +201,7 @@ git push origin main
 ## Repository Structure
 
 ```
-virtual_lab/
+zhao-virtual-lab/
 ├── desktop_app/              # macOS desktop application
 │   ├── paper_enhancement.applescript
 │   ├── PaperEnhancement.icns
@@ -237,11 +237,10 @@ Before pushing to GitHub:
 
 ## Next Steps
 
-1. ✅ Files are prepared and ready
-2. ⏭️ Fork zou-group/virtual_lab to Rose-Labs (see FORK_SETUP.md)
-3. ⏭️ Update your local repository remotes
-4. ⏭️ Commit and push your changes
-5. ⏭️ Share repository URL with team members
-6. ⏭️ Securely share .env contents with team (not via GitHub!)
+1. ✅ Fork created at Rose-Labs/zhao-virtual-lab
+2. ✅ Local repository remotes updated
+3. ✅ Changes committed and pushed
+4. ⏭️ Share repository URL (https://github.com/Rose-Labs/zhao-virtual-lab) with team
+5. ⏭️ Securely share .env contents with team (not via GitHub!)
 
 You're all set! Your team can now collaborate on the Paper Enhancement Pipeline.
